@@ -1,38 +1,25 @@
-/******************************************************************************
-
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
 #include <iostream>
 using namespace std;
 int front = - 1, rear = - 1;
-int declare(int a)
-{
-    int b[a];
-    return b[a];
-}
-void enque(int b, int size, int d){
+int b[100];
+void enque(int size){
     int val;
     
-    for(int i=0; i<b; i++){
-        if (rear == size - 1){
-            cout<<"Queue Overflow"<<endl;
-        }
-        else {
-              if (front == - 1)
-              front = 0;
-              cout<<"Insert the element in queue : "<<endl;
-              cin>>val;
-              rear++;
-              b[rear] = val;
-        }
-        
+    if (rear == size - 1){
+        cout<<"Queue Overflow"<<endl;
     }
+    else {
+          if (front == - 1)
+          front = 0;
+          cout<<"Insert the element in queue : "<<endl;
+          cin>>val;
+          rear++;
+          b[rear] = val;
+    }
+    
+    
 }
-void Delete() {
+void Deque() {
    if (front == - 1 || front > rear) {
       cout<<"Queue Underflow ";
       return ;
@@ -54,12 +41,30 @@ void Display() {
 
 int main()
 {
-    int i;
+    int i,a,n;
     
-    cout<<"Welcome please enter the size of the queue";
+    cout<<"Welcome please enter the size of the queue"<<endl;
     cin>>n;
-    declare(n);
     
+    cout<<"Please enter the digit from the options"<<endl;
+    cout<<"1.Enqueue"<<endl<<"2.Dequeue"<<endl<<"3.Display"<<endl<<"0.Close"<<endl;
+    cin>>a;
+    while(true){
+        switch(a){
+            case 0:
+                break;
+            case 1:
+                enque(n);
+                break;
+            case 2:
+                Deque();
+                break;
+            case 3:
+                Display();
+                break;
+            
+        }
+    }  
 
     return 0;
 }
