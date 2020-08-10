@@ -1,3 +1,11 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
 #include <iostream>
 using namespace std;
 int front = - 1, rear = - 1;
@@ -45,14 +53,15 @@ int main()
     
     cout<<"Welcome please enter the size of the queue"<<endl;
     cin>>n;
-    
-    cout<<"Please enter the digit from the options"<<endl;
-    cout<<"1.Enqueue"<<endl<<"2.Dequeue"<<endl<<"3.Display"<<endl<<"0.Close"<<endl;
-    cin>>a;
-    while(true){
+     while(true){
+        cout<<"Please enter the digit from the options"<<endl;
+        cout<<"1.Enqueue"<<endl<<"2.Dequeue"<<endl<<"3.Display"<<endl<<"0.Close"<<endl;
+        cin>>a;
+   
         switch(a){
             case 0:
-                break;
+            cout<<"Thank you";
+                return false;
             case 1:
                 enque(n);
                 break;
