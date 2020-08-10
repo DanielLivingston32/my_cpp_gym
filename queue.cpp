@@ -60,16 +60,19 @@ int main()
    
         switch(a){
             case 0:
-            cout<<"Thank you";
+            cout<<endl<<"Thank you";
                 return false;
             case 1:
                 enque(n);
+                cout<<endl;
                 break;
             case 2:
                 Deque();
+                cout<<endl;
                 break;
             case 3:
                 Display();
+                cout<<endl;
                 break;
             
         }
