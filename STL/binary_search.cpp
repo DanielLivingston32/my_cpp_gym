@@ -38,7 +38,8 @@ int main(){
    
    //lower_bound returns the index of the location of the >=key
    //upper returns >key
-   //here lower =2 and upper=5
+    //if key==40 then,
+   // lower =2 and upper=5
    //frequency of occurence of an ele in a sorted array is upper-lower
    
  
