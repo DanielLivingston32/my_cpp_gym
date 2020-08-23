@@ -12,7 +12,7 @@ string infixConversion(string postfix) {
 	int n=postfix.length();
 	int result[n];
 	for(int i=0; i<n; i++){
-	    int result[i]=stoi(postfix);
+	    result[i]=atoi(postfix[i]);
 	}
 	int result[]=stoi(postfix);
 	for (int i=0; result[i]!='\0'; i++) {
