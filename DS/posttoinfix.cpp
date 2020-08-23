@@ -17,7 +17,7 @@ string infixConversion(string postfix) {
 	   result[i]=stoi(postfix);
 	   
 	}
-	int result[]=stoi(postfix);
+	
 	for (int i=0; result[i]!='\0'; i++) {
 		if (isOperand(result[i])) {
 		 string op(1, result[i]);
