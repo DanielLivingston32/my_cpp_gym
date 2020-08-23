@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 bool isOperand(int x) {
-   return (x >=INT_MIN && x <= INT_MAX);
+   return (x >=48 && x <=57);
 }
 
 
@@ -13,8 +13,7 @@ string infixConversion(string postfix) {
 	int result[n];
 	for(int i=0; i<n; i++){
 		
-	  (int)postfix[i]-48;
-	   result[i]=stoi(postfix);
+	  result[i]=int(postfix[i]);
 	   
 	}
 	
