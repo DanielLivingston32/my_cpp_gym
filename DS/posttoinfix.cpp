@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 bool isOperand(int x) {
-   return (x >=48 && x <=57);
+   return !(x >=48 && x <=57);
 }
 
 
@@ -17,7 +17,7 @@ string infixConversion(string postfix) {
 	   
 	}
 	
-	for (int i=0; result[i]!='\0'; i++) {
+	for (int i=0; i<n; i++) {
 		if (isOperand(result[i])) {
 		 string op(1, result[i]);
 		 infix.push(op);
